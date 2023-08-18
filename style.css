@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+h2, h3 {
+    text-align: center;
+
+
+
+}
+
+
+h3 {
+    margin-bottom: 20px;
+}
+
+
+@keyframes RUNTREX {
+    0% {
+        background: url(../images/run2.png);
+        background-size: 100% 100%;
+
+    }
+
+    20% {
+        background: url(../images/run3.png);
+        background-size: 100% 100%;
+
+    }
+
+    50% {
+        background: url(../images/run7.png);
+        background-size: 100% 100%;
+
+    }
+
+    60% {
+        background: url(../images/run8.png);
+        background-size: 100% 100%;
+    }
+
+}
+
+
+
+
+
+
+#area1 {
+    margin: auto;
+    height: 450px;
+    width: 700px;
+    object-fit: cover;
+    background-image: url(../games.png);
+    overflow: hidden;
+    position: relative;
+}
+
+#area2 {
+    height: 450px;
+    width: 600px;
+    position: absolute;
+    overflow: hidden;
+}
+
+#T-rex.Beku {
+    background: url(../images/run8.png);
+    background-size: 100% 100%;
+    animation: none;
+}
+#T-rex {
+    height: 100px;
+    width: 100px;
+    background: url(../images/run1.png);
+    background-size: 100% 100%;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 50px;
+    animation: RUNTREX 0.5s infinite;
+    transition: 1s;
+}
+
+/* ... kode CSS lainnya ... */
+
+@keyframes Penghalang {
+    0% {
+        margin-left: 700px;
+    }
+    100% {
+        margin-left: -70px;
+    }
+}
+
+#Block {
+    width: 70px;
+    height: 70px;
+    margin-top: 343px;
+    background: url(../faileds.png);
+    background-size: 100% 100%;
+    position: absolute;
+    margin-left: 600px;
+    animation: Penghalang 5s infinite;
+}
+
+
